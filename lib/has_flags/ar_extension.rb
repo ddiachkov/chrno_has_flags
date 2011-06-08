@@ -19,7 +19,7 @@ module HasFlags
     #   user.flags.toggle! :is_admin
     #   user.flags.is_editor = true
     #   user.flags                   #=> [ :is_editor ]
-    #   User.available_flags         #=> [ :is_admin, :is_editor ]
+    #   user.available_flags         #=> [ :is_admin, :is_editor ]
     #
     def has_flags( flags, options = {} )
       raise ArgumentError, "flags must be an Array" unless flags.is_a? Array
